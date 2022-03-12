@@ -30,7 +30,7 @@ class dayQuote: UIViewController {
     @IBAction func newQuote(_ sender: Any) {
         let randomNum = Int.random(in: 1 ... 16)
         
-        quote.image = UIImage(named: "image\(randomNum).jpg")
+        quote.image = UIImage(named: "image\(randomNum)")
     }
     
 }

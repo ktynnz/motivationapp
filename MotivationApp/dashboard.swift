@@ -19,8 +19,8 @@ class dashboard: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let num = Int.random(in: 0...16)
-        quoteImage.image = UIImage(named: "image\(num).jpg")
+        let num = Int.random(in: 1...16)
+        quoteImage.image = UIImage(named: "image\(num)")
         
         
         

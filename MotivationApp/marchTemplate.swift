@@ -30,9 +30,16 @@ class marchTemplate: UIViewController {
     }
     
     func getRandomColor() -> UIColor {
-    let colors = [UIColor.systemYellow, UIColor.systemOrange, UIColor.systemGreen, UIColor.systemRed, UIColor.systemGray]
+    let colors =
+        [
+         UIColor(named: "CustomYellow"),
+         UIColor(named: "CustomOrange"),
+         UIColor(named: "CustomGreen"),
+         UIColor(named: "CustomRed"),
+         UIColor(named: "CustomGray")
+        ]
     let randomNum = Int.random(in: 0...4)
     
-    return colors[(randomNum)]
+        return colors[(randomNum)] ?? UIColor.clear
     }
 }

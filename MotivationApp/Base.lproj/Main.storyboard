@@ -3,6 +3,7 @@
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -40,7 +41,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="CustomYellow"/>
                         <constraints>
                             <constraint firstItem="RkY-Bh-e7U" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="241" id="UPM-cw-eya"/>
                             <constraint firstItem="RkY-Bh-e7U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-9.5" id="ccW-09-9jd"/>
@@ -86,9 +87,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Featured Quote of the Month from @user123" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYz-Dd-HX3">
-                                <rect key="frame" x="39" y="60" width="360" height="60"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="39" y="75" width="360" height="55"/>
+                                <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="30"/>
+                                <color key="textColor" red="0.023529411760000001" green="0.53725490200000003" blue="0.55294117649999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="AlM-Xi-BCm">
@@ -151,14 +152,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pzp-pQ-zuN">
-                                <rect key="frame" x="303" y="89" width="45" height="30"/>
+                                <rect key="frame" x="303" y="99" width="45" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="2K7-tP-pRw"/>
                                     <constraint firstAttribute="height" constant="30" id="eX6-mg-LNK"/>
                                 </constraints>
                                 <color key="tintColor" systemColor="systemTealColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="questionmark.circle.fill" catalog="system">
+                                <buttonConfiguration key="configuration" style="plain" image="questionmark.circle.fill" catalog="system" title="">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" weight="bold"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -174,14 +175,14 @@
                             <constraint firstItem="6Xh-f2-5fm" firstAttribute="top" secondItem="bNo-Ck-ECI" secondAttribute="bottom" constant="25" id="4wO-aA-2tD"/>
                             <constraint firstItem="7hj-Hv-yhz" firstAttribute="leading" secondItem="yyt-kC-0Fc" secondAttribute="leading" constant="25" id="5ik-LP-pOB"/>
                             <constraint firstItem="AlM-Xi-BCm" firstAttribute="leading" secondItem="yyt-kC-0Fc" secondAttribute="leading" constant="14" id="9mZ-yh-3VO"/>
-                            <constraint firstItem="JYz-Dd-HX3" firstAttribute="top" secondItem="E2y-gS-MeF" secondAttribute="top" constant="60" id="A6H-5Q-8cl"/>
+                            <constraint firstItem="JYz-Dd-HX3" firstAttribute="top" secondItem="E2y-gS-MeF" secondAttribute="top" constant="75" id="A6H-5Q-8cl"/>
                             <constraint firstItem="AlM-Xi-BCm" firstAttribute="centerX" secondItem="E2y-gS-MeF" secondAttribute="centerX" id="ClU-m6-VOq"/>
                             <constraint firstItem="1q4-dC-xPK" firstAttribute="top" secondItem="AlM-Xi-BCm" secondAttribute="bottom" constant="10" id="PhW-9j-FJd"/>
                             <constraint firstItem="1q4-dC-xPK" firstAttribute="leading" secondItem="yyt-kC-0Fc" secondAttribute="leading" constant="25" id="QfY-HD-Jis"/>
                             <constraint firstItem="yyt-kC-0Fc" firstAttribute="trailing" secondItem="Pzp-pQ-zuN" secondAttribute="trailing" constant="80" id="T2e-ul-Imp"/>
                             <constraint firstItem="yyt-kC-0Fc" firstAttribute="trailing" secondItem="JYz-Dd-HX3" secondAttribute="trailing" constant="29" id="cG6-TT-sBC"/>
                             <constraint firstItem="bNo-Ck-ECI" firstAttribute="top" secondItem="AlM-Xi-BCm" secondAttribute="bottom" constant="35" id="hIG-lT-PMG"/>
-                            <constraint firstItem="Pzp-pQ-zuN" firstAttribute="top" secondItem="yyt-kC-0Fc" secondAttribute="top" constant="45" id="htX-54-rSP"/>
+                            <constraint firstItem="Pzp-pQ-zuN" firstAttribute="top" secondItem="yyt-kC-0Fc" secondAttribute="top" constant="55" id="htX-54-rSP"/>
                             <constraint firstItem="yyt-kC-0Fc" firstAttribute="trailing" secondItem="AlM-Xi-BCm" secondAttribute="trailing" constant="14" id="kUi-X0-lme"/>
                             <constraint firstItem="AlM-Xi-BCm" firstAttribute="top" secondItem="yyt-kC-0Fc" secondAttribute="top" constant="85" id="m6N-sT-zQN"/>
                             <constraint firstItem="yyt-kC-0Fc" firstAttribute="trailing" secondItem="bNo-Ck-ECI" secondAttribute="trailing" constant="25" id="n3P-Eh-TGP"/>
@@ -394,7 +395,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eP8-57-qVd"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="CustomWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gP9-Bz-4bR" firstAttribute="leading" secondItem="eP8-57-qVd" secondAttribute="leading" constant="49" id="0YR-dd-vdD"/>
@@ -585,11 +586,11 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Generate New Quote" cornerStyle="capsule">
                                     <backgroundConfiguration key="background" strokeWidth="2" strokeOutset="5">
-                                        <color key="backgroundColor" red="1" green="0.93591099560000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <color key="strokeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="CustomYellow"/>
+                                        <color key="strokeColor" name="CustomFontColor"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Kailasa" family="Kailasa" pointSize="18"/>
-                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="CustomFontColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="newQuote:" destination="t6a-E9-ewJ" eventType="touchUpInside" id="GVe-B5-FbB"/>
@@ -614,7 +615,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h3h-Sd-eOg"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.63529411764705879" green="0.82352941176470584" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="SSj-mg-WpU" firstAttribute="top" secondItem="h3h-Sd-eOg" secondAttribute="top" constant="47" id="Ah0-95-JgM"/>
@@ -748,7 +749,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zLF-LJ-dGt"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.72654408717515273" green="0.91919191919191923" blue="0.88456572579176973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="3sc-SG-s7L" firstAttribute="top" secondItem="R2c-5i-1tF" secondAttribute="bottom" constant="20" id="2XG-1S-wS2"/>
@@ -807,14 +808,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rak-Iu-819">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.29999999999999999" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2022" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rak-Iu-819">
                                 <rect key="frame" x="28" y="89" width="372" height="234"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="372" id="09n-g2-0JU"/>
                                     <constraint firstAttribute="height" constant="234" id="oAT-ck-2u0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="PartyLetPlain" family="Party LET" pointSize="200"/>
-                                <color key="textColor" systemColor="systemPurpleColor"/>
+                                <color key="textColor" red="0.67795578973509396" green="0.41581703264222075" blue="0.69696969696969702" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" red="0.33333333333333337" green="0.15309042832499772" blue="0.22032143759573219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="shadowOffset" width="4" height="1"/>
@@ -863,7 +864,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXE-JM-mWD">
@@ -874,7 +875,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5jO-Jy-WjX">
@@ -885,7 +886,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6R-Kc-f1P">
@@ -896,7 +897,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxM-XB-W89">
@@ -907,7 +908,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EfW-u3-Ggu">
@@ -918,7 +919,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJt-Oy-a6c">
@@ -929,7 +930,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7fg-Fb-jRf">
@@ -940,7 +941,7 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xzc-eO-REP">
@@ -951,12 +952,12 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
-                                    <backgroundConfiguration key="background" image="months.png"/>
+                                    <backgroundConfiguration key="background" cornerRadius="25" image="months.png"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qdI-ic-bz8"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.54769901124003362" green="0.61103893812001076" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="Xzc-eO-REP" firstAttribute="leading" secondItem="7fg-Fb-jRf" secondAttribute="trailing" constant="44" id="0BJ-5E-7IB"/>
@@ -1018,6 +1019,19 @@
                         </connections>
                     </view>
                     <connections>
+                        <outlet property="year" destination="Rak-Iu-819" id="57G-BJ-sIm"/>
+                        <outletCollection property="month1" destination="Kkx-e3-A2T" collectionClass="NSMutableArray" id="Gqy-K2-hGJ"/>
+                        <outletCollection property="month1" destination="JOZ-pq-ltX" collectionClass="NSMutableArray" id="xUy-bN-EsE"/>
+                        <outletCollection property="month1" destination="2bl-pS-mfa" collectionClass="NSMutableArray" id="Mrf-Eh-e5Z"/>
+                        <outletCollection property="month2" destination="DTN-sH-oMm" collectionClass="NSMutableArray" id="T1E-lq-B9k"/>
+                        <outletCollection property="month2" destination="KXE-JM-mWD" collectionClass="NSMutableArray" id="mUZ-5v-cLb"/>
+                        <outletCollection property="month2" destination="5jO-Jy-WjX" collectionClass="NSMutableArray" id="sp1-VN-S56"/>
+                        <outletCollection property="month3" destination="z6R-Kc-f1P" collectionClass="NSMutableArray" id="qJf-3y-osH"/>
+                        <outletCollection property="month3" destination="oxM-XB-W89" collectionClass="NSMutableArray" id="NGu-Xs-eZk"/>
+                        <outletCollection property="month3" destination="EfW-u3-Ggu" collectionClass="NSMutableArray" id="Hyh-Ez-qrz"/>
+                        <outletCollection property="month4" destination="hJt-Oy-a6c" collectionClass="NSMutableArray" id="cke-vL-cGZ"/>
+                        <outletCollection property="month4" destination="7fg-Fb-jRf" collectionClass="NSMutableArray" id="eRT-ZR-Qdg"/>
+                        <outletCollection property="month4" destination="Xzc-eO-REP" collectionClass="NSMutableArray" id="HGr-VN-tRY"/>
                         <segue destination="rHx-ta-LRj" kind="presentation" identifier="marchTemplate" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="kCI-aL-DeX"/>
                     </connections>
                 </viewController>
@@ -1137,7 +1151,13 @@
                                     <constraint firstAttribute="height" constant="50" id="x9D-HW-pqc"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="SEND"/>
+                                <buttonConfiguration key="configuration" style="filled" title="SEND">
+                                    <backgroundConfiguration key="background" cornerRadius="17" strokeWidth="2" strokeOutset="5">
+                                        <color key="strokeColor" name="CustomFontColor"/>
+                                    </backgroundConfiguration>
+                                    <color key="baseForegroundColor" name="CustomFontColor"/>
+                                    <color key="baseBackgroundColor" red="0.52251781720000001" green="0.84737275639999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="3hK-Y0-csw"/>
@@ -1156,7 +1176,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ybi-oP-obn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="CustomWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="cfJ-XZ-I3H" firstAttribute="leading" secondItem="Ybi-oP-obn" secondAttribute="leading" constant="54" id="0F0-Kl-1aA"/>
@@ -1368,7 +1388,8 @@
                                         <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Kailasa" family="Kailasa" pointSize="25"/>
-                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="CustomWhite"/>
+                                    <color key="baseBackgroundColor" name="CustomFontColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="start:" destination="6u3-cq-A0g" eventType="touchUpInside" id="5kT-DA-10T"/>
@@ -1386,7 +1407,8 @@
                                         <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="CustomWhite"/>
+                                    <color key="baseBackgroundColor" name="CustomFontColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="restart:" destination="6u3-cq-A0g" eventType="touchUpInside" id="7pf-Z2-t15"/>
@@ -1421,7 +1443,8 @@
                                         <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Kailasa" family="Kailasa" pointSize="25"/>
-                                    <color key="baseBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" name="CustomWhite"/>
+                                    <color key="baseBackgroundColor" name="CustomFontColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Home:" destination="6u3-cq-A0g" eventType="touchUpInside" id="1PE-8O-taq"/>
@@ -1501,7 +1524,7 @@
                                     <backgroundConfiguration key="background">
                                         <color key="strokeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" systemColor="systemYellowColor"/>
+                                    <color key="baseBackgroundColor" name="CustomYellow"/>
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6e0-mI-6iW">
@@ -1511,9 +1534,9 @@
                                     <constraint firstAttribute="width" constant="80" id="LK1-ze-hfu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.63831633830000001" green="0.65536696090000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6V-Qb-HJm">
@@ -1527,7 +1550,7 @@
                                     <backgroundConfiguration key="background" strokeWidth="1">
                                         <color key="strokeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                    <color key="baseBackgroundColor" name="CustomOrange"/>
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Excited" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3u-io-5KC">
@@ -1537,9 +1560,9 @@
                                     <constraint firstAttribute="width" constant="80" id="p11-ax-qFq"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.63831633830000001" green="0.65536696090000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p65-Hc-DmV">
@@ -1553,7 +1576,7 @@
                                     <backgroundConfiguration key="background" strokeWidth="1">
                                         <color key="strokeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                    <color key="baseBackgroundColor" name="CustomGreen"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jC-mS-CnF">
@@ -1567,7 +1590,7 @@
                                     <backgroundConfiguration key="background" strokeWidth="1">
                                         <color key="strokeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                    <color key="baseBackgroundColor" name="CustomRed"/>
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Angry" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rtJ-CG-4lD">
@@ -1577,9 +1600,9 @@
                                     <constraint firstAttribute="height" constant="23" id="rNx-0L-1DK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.63831633830000001" green="0.65536696090000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xyj-3e-Cgu">
@@ -1593,7 +1616,7 @@
                                     <backgroundConfiguration key="background" strokeWidth="1">
                                         <color key="strokeColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" name="CustomGray"/>
                                 </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demotivated" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3S-JM-J0F">
@@ -1603,9 +1626,9 @@
                                     <constraint firstAttribute="width" constant="130" id="xcf-VG-fHR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.63831633830000001" green="0.65536696090000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EpB-vB-SQl">
@@ -2243,14 +2266,14 @@
                                     <constraint firstAttribute="width" constant="80" id="uhI-eV-Se9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AppleSymbols" family="Apple Symbols" pointSize="25"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" name="CustomFontColor"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.63831633830000001" green="0.65536696090000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <size key="shadowOffset" width="1" height="-1"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="9fM-OW-vxy"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.54651858761766325" green="0.73737373737373735" blue="0.65904816829387647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="XUw-4c-g9s" firstAttribute="top" secondItem="mfw-rf-Ug2" secondAttribute="bottom" constant="33" id="0h8-Yc-Zhs"/>
@@ -2428,8 +2451,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="36Z-Tn-p8b"/>
-        <segue reference="F92-HG-IBt"/>
+        <segue reference="ALT-XA-2l5"/>
+        <segue reference="YO3-x5-Kn9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="February.png" width="810" height="810"/>
@@ -2447,6 +2470,27 @@
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="quote.png" width="810" height="810"/>
         <image name="repeat" catalog="system" width="128" height="98"/>
+        <namedColor name="CustomFontColor">
+            <color red="0.16862745098039217" green="0.1764705882352941" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomGray">
+            <color red="0.12941176470588234" green="0.14509803921568626" blue="0.16078431372549018" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomGreen">
+            <color red="0.1764705882352941" green="0.41568627450980389" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomOrange">
+            <color red="0.95686274509803915" green="0.63529411764705879" blue="0.38039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomRed">
+            <color red="0.90196078431372551" green="0.22352941176470587" blue="0.27450980392156865" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomWhite">
+            <color red="0.88599997758865356" green="0.92400002479553223" blue="0.88400000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomYellow">
+            <color red="0.9137254901960784" green="0.76862745098039209" blue="0.41568627450980389" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -2456,23 +2500,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
