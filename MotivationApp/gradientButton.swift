@@ -2,7 +2,7 @@
 //  gradientButton.swift
 //  MotivationApp
 //
-//  Created by user215671 on 3/11/22.
+//  Created by ktynnz on 3/11/22.
 //
 
 import UIKit

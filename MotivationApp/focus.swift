@@ -2,7 +2,7 @@
 //  focus.swift
 //  MotivationApp
 //
-//  Created by user215671 on 3/6/22.
+//  Created by ktynnz on 3/6/22.
 //
 
 import UIKit
@@ -37,32 +37,42 @@ class focus: UIViewController {
         pause.isEnabled = false
     }
     
-    
+    //Action Buttons
     @IBAction func start(_ sender: Any) {
-        timer = Timer.scheduledTimer(timeInterval: 0.0001, target: self, selector: #selector(count) , userInfo: nil, repeats: true)
+        
+        //triggers the timer with interval of 1 second and is connected to function count (#selector(count)
+        //change interval to less than 1 (e.g. 0.0001) to make it count faster
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(count) , userInfo: nil, repeats: true)
+        
+        //buttons
         start.isEnabled = false
         pause.isEnabled = true
-        
-       
     }
     
     @IBAction func pause(_ sender: Any) {
+        //disables the timer
         timer.invalidate()
         
+        //buttons
         start.isEnabled = true
         pause.isEnabled = false
     }
     
     @IBAction func reset(_ sender: Any) {
         
+        //set variables start count to 0
         seconds = 0
         minutes = 0
         hours = 0
+        
+        //Labels initial text
         secondsLabel.text = "00"
         minutesLabel.text = "00"
         hoursLabel.text = "00"
         
         timer.invalidate()
+        
+        //buttons & imageView
         start.isEnabled = true
         pause.isEnabled = false
         
@@ -70,15 +80,21 @@ class focus: UIViewController {
     }
     
     
+    //functions
     
+    //count function connected to start button
     @objc func count() {
         
+        //When timer starts, increment seconds to 1
         seconds += 1
+        
+        //Labels
         secondsLabel.text = "\(seconds)"
         minutesLabel.text = "\(minutes)"
         hoursLabel.text = "\(hours)"
 
-        //SECONDS
+        //CONDITIONS
+        //seconds
         if seconds == 60 {
             seconds = 0
             minutes += 1
@@ -90,7 +106,7 @@ class focus: UIViewController {
         }
         
         
-                //MINUTES
+                //Minutes
                 if minutes == 60 {
                     minutes = 0
                     hours += 1
@@ -102,7 +118,7 @@ class focus: UIViewController {
                 }
         
         
-                        //HOURS
+                        //Hours
                         if hours == 24 {
                             secondsLabel.text = "00"
                             minutesLabel.text = "00"
@@ -118,7 +134,7 @@ class focus: UIViewController {
                         }
         
         
-        //growingPlant
+        //GROWING PLANT - everyime a condition is met, it displays the assigned image
         //seconds
         if seconds > 5 && minutes >= 0 && hours >= 0 {
             plantImage.image = UIImage (named: "plant1")

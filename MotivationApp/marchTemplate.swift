@@ -2,33 +2,33 @@
 //  marchTemplate.swift
 //  MotivationApp
 //
-//  Created by user215671 on 3/7/22.
+//  Created by ktynnz on 3/7/22.
 //
 
 import UIKit
 
 class marchTemplate: UIViewController {
 
-    
- 
-    //@IBOutlet var days: [UIButton]!
-    
-    
+    //Button Array - drag button then select Outlet Collection, then drag from the circle beside @IBOutlet to the buttons which you want to include in the array
+    //Best used if you have a lot of objects that you want the same assigned output
     @IBOutlet var days: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //for loop for the buttons - assigning them the same colors
         for daysNum in days {
             daysNum.tintColor = UIColor.clear
         }
     }
    
-    
+    //everytime the button is clicked it will change colors
     @IBAction func days(_ sender: UIButton) {
         sender.tintColor = getRandomColor()
     }
     
+    
+    //Assigns and generate random solid UIColors
     func getRandomColor() -> UIColor {
     let colors =
         [

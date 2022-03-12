@@ -2,7 +2,7 @@
 //  ContactUs.swift
 //  MotivationApp
 //
-//  Created by user215671 on 3/10/22.
+//  Created by ktynnz on 3/10/22.
 //
 
 import UIKit
@@ -17,7 +17,6 @@ class ContactUs: UIViewController, MFMailComposeViewControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 

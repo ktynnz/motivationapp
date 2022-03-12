@@ -13,19 +13,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        
-        //Gradient
-//        let gradientLayer = CAGradientLayer()
-//        gradientLayer.frame = view.bounds
-//        gradientLayer.colors = [
-//            UIColor.systemTeal.cgColor,
-//            UIColor.systemOrange.cgColor
-//        ]
-//        view.layer.addSublayer(gradientLayer)
         
         
-        
+        //Splash screen - Next page loads after 3 seconds
         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0)
         {
             //what to happen after the delay
@@ -35,16 +25,20 @@ class ViewController: UIViewController {
     
 
         UILabel.animate(withDuration: 3.5, delay: 0, animations: {
-                
+            
+            
+            //fades in image
             UILabel.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.25, animations: {
                 self.motivation.alpha = 1
             })
             
+            //start position entry of image
             UILabel.addKeyframe(withRelativeStartTime: 1.0, relativeDuration: 0.25, animations: {
                 self.motivation.layer.position.y = -100
                 
             })
             
+            //fades out image
             UILabel.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.25, animations: {
                 self.motivation.alpha = 0
             })

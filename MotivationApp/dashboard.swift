@@ -2,7 +2,7 @@
 //  dashboard.swift
 //  MotivationApp
 //
-//  Created by user215671 on 3/10/22.
+//  Created by ktynnz on 3/10/22.
 //
 
 import UIKit
@@ -21,9 +21,6 @@ class dashboard: UIViewController {
 
         let num = Int.random(in: 1...16)
         quoteImage.image = UIImage(named: "image\(num)")
-        
-        
-        
         
 //        UILabel.animate(withDuration: 1.5, delay: 0, animations: {
 //
@@ -46,7 +43,7 @@ class dashboard: UIViewController {
 //
     }
     
-    
+    //Animation will appear as soon as the page loads
     override func viewWillAppear(_ animated: Bool) {
         UILabel.animate(withDuration: 1.5, delay: 0, animations: {
                 
@@ -79,6 +76,7 @@ class dashboard: UIViewController {
     }
     
     
+    //BUTTONS
     @IBAction func sendQuotes(_ sender: Any) {
         performSegue(withIdentifier: "sendQuote", sender: nil)
     }

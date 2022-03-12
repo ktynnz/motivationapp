@@ -2,7 +2,7 @@
 //  dayQuote.swift
 //  MotivationApp
 //
-//  Created by user215671 on 3/10/22.
+//  Created by ktynnz on 3/10/22.
 //
 
 import UIKit
@@ -16,14 +16,16 @@ class dayQuote: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        let gradientLayer = CAGradientLayer()
-//        gradientLayer.frame = view.bounds
-//        gradientLayer.colors = [
-//            UIColor.systemTeal.cgColor,
-//            UIColor.systemOrange.cgColor
-//        ]
-//        //view.layer.addSublayer(gradientLayer)
-//        view.layer.backgroundColor = CGColor.gradientLayer
+    /* ASSIGNING GRADIENT --- LEARN MORE ABOUT GRADIENTS
+         let gradientLayer = CAGradientLayer()
+         gradientLayer.frame = view.bounds
+         gradientLayer.colors = [
+             UIColor.systemTeal.cgColor,
+             UIColor.systemOrange.cgColor
+         ]
+         //view.layer.addSublayer(gradientLayer)
+         view.layer.backgroundColor = CGColor.gradientLayer
+    */
     }
     
     
